@@ -1,0 +1,134 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #612734;
+  background: linear-gradient(120deg, #ffe0b2 0%, #f8b6d2 50%, #f7c6e0 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #f78fb3;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f7b6d2;
+}
+
+html, body {
+  overflow: hidden !important;
+}
+
+html, body, #app {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ffe0b2 0%, #f8b6d2 50%, #f7c6e0 100%);
+  color: #612734;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(90deg, #f78fb3 0%, #f7b6d2 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.25s;
+}
+button:hover {
+  border-color: #f7b6d2;
+  background: linear-gradient(90deg, #f7b6d2 0%, #f78fb3 100%);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+  background: #fff0fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(247, 143, 179, 0.08);
+}
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #612734;
+}
+
+.el-select {
+  --el-select-border-color: #f7b6d2;
+  --el-select-hover-border-color: #f78fb3;
+  --el-select-input-color: #612734;
+  --el-select-bg-color: #fff7fb;
+  --el-select-dropdown-bg-color: #fff7fb;
+  --el-select-dropdown-border-color: #f7b6d2;
+  --el-select-input-font-size: 16px;
+  border-radius: 8px;
+}
+.el-select .el-input__wrapper {
+  background: #fff7fb;
+  border-radius: 8px;
+  color: #612734;
+  border: 1.5px solid #f7b6d2;
+  box-shadow: none !important;
+}
+.el-select .el-input__wrapper,
+.el-select .el-input__wrapper:focus,
+.el-select .el-input__wrapper.is-focus,
+.el-select .el-input__wrapper:hover,
+.el-select .el-input__wrapper.is-active,
+.el-select .el-input.is-focus .el-input__wrapper,
+.el-select .el-input.is-active .el-input__wrapper {
+  border: 1.5px solid #f7b6d2 !important;
+  box-shadow: 0 0 0 2px #f7b6d2 !important;
+}
+.el-select .el-input__wrapper::after {
+  border: none !important;
+  box-shadow: none !important;
+}
+.el-select-dropdown {
+  background: #fff7fb;
+  border-radius: 12px;
+  color: #612734;
+  border: 1.5px solid #f7b6d2;
+}
+.el-select-dropdown__item {
+  color: #612734 !important;
+  font-weight: 500;
+}
+.el-select-dropdown__item.selected,
+.el-select-dropdown__item.is-selected {
+  background: #fff9e5 !important;
+  color: #f78fb3 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #612734;
+    background: linear-gradient(120deg, #ffe0b2 0%, #f8b6d2 50%, #f7c6e0 100%);
+  }
+  a:hover {
+    color: #f78fb3;
+  }
+  button {
+    background: linear-gradient(90deg, #f7b6d2 0%, #f78fb3 100%);
+  }
+}
